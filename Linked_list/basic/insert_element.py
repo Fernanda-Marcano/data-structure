@@ -16,11 +16,13 @@ class LinkedList:
         else:
             current = self.head
             count = 0
+            prev = None
             while current.next is not None and count < position -1:
+                prev = current
                 current = current.next
                 count += 1
-            new_node.next = current.next
-            current.next = new_node
+            new_node.next = prev.next
+            prev.next = new_node
     
     def print_list(self):
         if self.head is not None:
@@ -33,4 +35,6 @@ class LinkedList:
 
 lista = LinkedList()
 lista.insert_element_in_position(20, 1)
+lista.insert_element_in_position(50, 1)
+lista.insert_element_in_position(70, 2)
 lista.print_list()
