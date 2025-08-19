@@ -57,13 +57,13 @@ class LinkedList:
                 current = current.next
             print('None')
 
-
-list = LinkedList()
-list.insert_to_last(20)
-list.insert_to_last(30)
-list.insert_to_last(40)
-list.insert_to_last(50)
-list.lenght_list()
-list.print_list()
-print()
-print(list.search_element(30))
+if __name__ == '__main__':
+    list = LinkedList()
+    list.insert_to_last(20)
+    list.insert_to_last(30)
+    list.insert_to_last(40)
+    list.insert_to_last(50)
+    list.lenght_list()
+    list.print_list()
+    print()
+    print(list.search_element(30))

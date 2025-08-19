@@ -49,23 +49,23 @@ class SimpleLinkedList:
                 current = current.next
             print("None")
 
+if __name__ == '__main__':
+    list = SimpleLinkedList()
 
-list = SimpleLinkedList()
+    list.insert_to_first(20)
+    list.insert_to_first(30)
+    list.insert_to_first(40)
+    list.insert_to_first(50)
+    list.print_list()
+    print()
+    list.insert_to_last(60)
+    list.insert_to_last(70)
+    list.print_list()
 
-list.insert_to_first(20)
-list.insert_to_first(30)
-list.insert_to_first(40)
-list.insert_to_first(50)
-list.print_list()
-print()
-list.insert_to_last(60)
-list.insert_to_last(70)
-list.print_list()
+    list.deleted_to_firts()
+    print()
+    list.print_list()
 
-list.deleted_to_firts()
-print()
-list.print_list()
-
-list.deleted_to_last()
-print()
-list.print_list()
+    list.deleted_to_last()
+    print()
+    list.print_list()
